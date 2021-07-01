@@ -20,53 +20,48 @@ export class Cart extends Component {
       );
     } else {
       return (
-        <>
-          <div className="container">
-            <div className="cart_wrapper">
-              {cart.map((item) => (
-                <div className="details cart" key={item._id}>
-                  <img src={item.src} alt="" />
-                  <div className="box">
-                    <div className="row">
-                      <h2>{item.title}</h2>
-                      <span>${item.price * item.count}</span>
-                    </div>
-
-                    <p>{item.description}</p>
-                    <p>color: {item.colors}</p>
-                    <div className={styles.amount}>
-                      <button
-                        className={styles.count}
-                        onClick={() => reduction(item._id)}
-                      >
-                        {" "}
-                        -{" "}
-                      </button>
-                      <span id="item">{item.count}</span>
-                      <button
-                        className={styles.count}
-                        onClick={() => increase(item._id)}
-                      >
-                        {" "}
-                        +{" "}
-                      </button>
-                    </div>
+        <div className="container">
+          <div className="cart_wrapper">
+            {cart.map((item) => (
+              <div className="details cart" key={item._id}>
+                <img src={item.src} alt="" />
+                <div className="box">
+                  <div className="row">
+                    <h2>{item.title}</h2>
+                    <span>${item.price * item.count}</span>
                   </div>
-                  <div
-                    className="delete"
-                    onClick={() => removeProduct(item._id)}
-                  >
-                    X
+
+                  <p>{item.description}</p>
+                  <p>color: {item.colors}</p>
+                  <div className={styles.amount}>
+                    <button
+                      className={styles.count}
+                      onClick={() => reduction(item._id)}
+                    >
+                      {" "}
+                      -{" "}
+                    </button>
+                    <span id="item">{item.count}</span>
+                    <button
+                      className={styles.count}
+                      onClick={() => increase(item._id)}
+                    >
+                      {" "}
+                      +{" "}
+                    </button>
                   </div>
                 </div>
-              ))}
-              <div className="total">
-                <Link to="/payment">Payment</Link>
-                <h3>Total: ${total}</h3>
+                <div className="delete" onClick={() => removeProduct(item._id)}>
+                  X
+                </div>
               </div>
+            ))}
+            <div className="total">
+              <Link to="/payment">Payment</Link>
+              <h3>Total: ${total}</h3>
             </div>
           </div>
-        </>
+        </div>
       );
     }
   }

@@ -29,6 +29,8 @@ function MainComponent() {
             <Route exact path="/about" component={AboutComponent} />
             <Route exact path="/contact" component={ContactComponent} />
             <Route exact path="/shop" component={Products} />
+            <Route exact path="/cart" component={Cart} />
+            <Redirect to='/home' />
           </Switch>
           <Section />
           <FooterComponent />

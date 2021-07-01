@@ -23,7 +23,6 @@
   text-decoration: none;
 }
 
-<<<<<<< HEAD
   .contactLinks:hover {
     color: white;
     text-decoration: none;
@@ -38,11 +37,6 @@
     width: 100vw;
     background: black;
   }
-=======
-body {
-  background-color: black;
-}
->>>>>>> 18c5692a1506fe8c6886c3a87bcfedad176a176a
 
 #contactPage {
   height: 100vh;
