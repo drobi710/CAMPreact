@@ -9,7 +9,6 @@ import {
   Switch,
   Route,
   Redirect,
-  Link,
 } from "react-router-dom";
 
 import Products from "../pages/cart/Products";

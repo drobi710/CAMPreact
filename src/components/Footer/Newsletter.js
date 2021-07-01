@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Col, FormFeedback } from "reactstrap";
+import { Form, FormGroup, Input, Col, FormFeedback } from "reactstrap";
 
 import styles from "../Footer/Newsletter.module.css";
 

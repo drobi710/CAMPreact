@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Modal, Button, Row, Col, Form, Container } from "react-bootstrap";
+import { Modal, Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export class SignInModal extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
   render() {
     return (
       <Modal

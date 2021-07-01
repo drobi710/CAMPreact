@@ -3,7 +3,6 @@ import Cart from "../cart/Cart";
 import { Route } from "react-router-dom";
 import Payment from "../cart/Payment";
 import Products from "../cart/Products";
-import styles from "../cart/Cart.css";
 
 export class Section extends Component {
   render() {
